@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Pluto Static Viewer",
+  "version": "1.0",
+  "description": "open pluto notebooks as pluto notebooks",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/blob/*"
+      ],
+      "js": [
+        "plutoify.js"
+      ]
+    }
+  ]
+}
